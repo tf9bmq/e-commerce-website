@@ -1,0 +1,560 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniStyle</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" class="rounded-3xl" href="./images/browser-logo.png" type="image/x-icon">
+    <title>UniStyle - A unique & elegant clothing style</title>
+
+
+
+
+</head>
+
+<body class="">
+
+    <header
+        class="top-0  w-full flex items-center  fixed h-17 text-black justify-between py-5 shadow-lg bg-[#e3e6f3]  z-50">
+        <a class=" font-agbalumo text-4xl text-black px-8 no-underline" href="home.html">Uni<span
+                class="text-cyan-600">Style</span> </a>
+
+        <div class="w-full flex justify-end space-x-3"><a href="wishlist.php" aria-current="page "
+                class=" md:hidden px-4 no-underline right-1.5 text-black text-xl hover:border-b-cyan-600   hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100"><i
+                        class="fa fa-heart text-[25px] " aria-hidden="true"></i>
+
+            </a><a href="cart.php" aria-current="page "
+                class=" md:hidden  no-underline right-1.5 text-black text-xl hover:border-b-cyan-600   hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100"><i
+                    class="fa fa-cart-arrow-down  text-2xl" aria-hidden="true"></i>
+
+            </a>
+            <button class="md:hidden text-black text-2xl" id="mobile-menu-toggle"><i
+                    class="fas fa-outdent"></i></button>
+        </div>
+        <ul class=" hidden md:flex space-x-14 font-poppins text-red-700 list-none pr-10">
+            <li class=""><a href="home.html" aria-current="page"
+                    class=" aria-[current=page]:text-cyan-600 aria-[current=page]:border-b-solid aria-[current=page]:border-b-2 aria-[current=page]:pb-[6px] aria-[current=page]:border-b-cyan-600    hover:border-b-cyan-600 no-underline text-black hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]   duration-100">Home</a>
+            </li>
+            <li class="  "><a href="shop.php" aria-current="page"
+                    class=" hover:border-b-cyan-600 no-underline text-black hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100">Shop</a>
+            </li>
+            <li class=""><a href="blog.html" aria-current="page"
+                    class=" hover:border-b-cyan-600 no-underline text-black hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100">Blog</a>
+            </li>
+            <li class=""><a href="about.html" aria-current="page"
+                    class=" hover:border-b-cyan-600 no-underline text-black hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100">About</a>
+            </li>
+            <li class=""><a href="contact.html" aria-current="page"
+                    class=" hover:border-b-cyan-600 text-black no-underline hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100">Contact</a>
+            </li>
+            <li class=""><a href="wishlist.php" aria-current="page"
+                    class="text-black hover:border-b-cyan-600 hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100"><i
+                        class="fa fa-heart" aria-hidden="true"></i>
+
+                </a></li>
+            <li class=""><a href="cart.php" aria-current="page"
+                    class="text-black hover:border-b-cyan-600 hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100"><i
+                        class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+
+                </a></li>
+
+        </ul>
+
+    </header>
+    <ul id="mobile-menu"
+        class="md:hidden w-33 h-80 fixed header-shadow top-15 right-0  duration-1000 bg-[#e3e6f3] list-none text-black hidden flex-col rounded-bl-2xl space-y-8 p-6 pt-10 font-poppins z-80">
+        <li><a class="no-underline text-black" href="home.html" id="home-mobile">Home</a></li>
+        <li><a class="no-underline text-black" href="shop.php" id="about-mobile">Shop</a></li>
+        <li><a class="no-underline text-black" href="blog.html" id="skills-mobile">Blog</a></li>
+        <li><a class="no-underline text-black" href="about.html" id="skills-mobile">About</a></li>
+        <li><a class="no-underline text-black" href="contact.html" id="contact-mobile">Contact</a></li>
+    </ul>
+    <section class="w-full h-[70vh] md:h-[90vh]
+         bg-[url('./images/banner-2.jpg')] bg-no-repeat bg-cover
+         bg-[position:top_30%_right_30%] md:bg-[position:top_20%_right_30%]
+         px-6 md:px-20 py-10 md:py-0
+         flex flex-col justify-center mt-16">
+        <h4 class="my-0 font-quick ">Upgrade & Save Offer</h4>
+        <h1 class="my-0 font-quick font-bold ">Incredible Discounts</h1>
+        <h1 class="text-cyan-600 my-0 font-quick text-5xl ">For Every Item</h1>
+        <p class="mt-5 font-poppins text-gray-600">Get More for Less – Up to 70% Discounts</p>
+        <button
+            class="text-cyan-600  w-48 bg-[url('./images/button.png')] bg-no-repeat bg-center bg-cover cursor-pointer font-bold" onclick="location.href='shop.php'">Shop
+            Now</button>
+    </section>
+    <section
+        class=" justify-center items-center flex flex-wrap  md:px-20 md:py-10  md:flex md:flex-wrap md:justify-between   ">
+        <div
+            class=" mx-[15px] my-[15px] w-44 text-center py-6 px-4 border border-solid border-[#cce7d0] feature-shadow hover-shadow rounded-[4px] md:mx-0  md:my-4">
+            <img src="images/f3.png" alt="" class="img-features ">
+            <h6 class=" h6-features   bg-[#cdebbc]">Save money </h6>
+        </div>
+        <div
+            class="mx-[15px] my-[15px] w-44 text-center py-6 px-4 border border-solid border-[#cce7d0] feature-shadow hover-shadow rounded-[4px]  md:mx-0  md:my-4">
+            <img src="images/f6.png" alt="" class="img-features ">
+            <h6 class=" h6-features bg-[#fff2e5]">24/7 Support</h6>
+        </div>
+        <div
+            class="mx-[15px] my-[15px] w-44 text-center py-6 px-4 border border-solid border-[#cce7d0] feature-shadow hover-shadow rounded-[4px]  md:mx-0  md:my-4">
+            <img src="images/f1.png" alt="" class="img-features ">
+            <h6 class=" h6-features  bg-[#d1e8f2]">Free Shipping</h6>
+        </div>
+        <div
+            class="mx-[15px] my-[15px] w-44 text-center py-6 px-4 border border-solid border-[#cce7d0] feature-shadow hover-shadow rounded-[4px]  md:mx-0  md:my-4">
+            <img src="images/f4.png" alt="" class="img-features ">
+            <h6 class=" h6-features bg-[#cdd4f8]">Promotions</h6>
+        </div>
+        <div
+            class="mx-[15px] my-[15px] w-44 text-center py-6 px-4 border border-solid border-[#cce7d0] feature-shadow hover-shadow rounded-[4px]  md:mx-0  md:my-4">
+            <img src="images/f2.png" alt="" class="img-features  ">
+            <h6 class=" h6-features bg-[#fddde4]">Online Order</h6>
+        </div>
+        <div
+            class="mx-[15px] my-[15px] w-44 text-center py-6 px-4 border border-solid border-[#cce7d0] feature-shadow hover-shadow rounded-[4px]  md:mx-0  md:my-4">
+            <img src="images/f5.png" alt="" class="img-features ">
+            <h6 class=" h6-features bg-[#f6dbf6]">Happy Sell</h6>
+        </div>
+    </section>
+    <section class=" lg:px-0 px-20 py-10 text-center flex-wrap">
+        <h2 class="font-quick text-5xl font-bold">Featured Products</h2>
+        <p class="font-poppins text-sm text-gray-600">Summer Collection New Modern Design</p>
+        <div
+            class=" lg:justify-center   justify-center flex flex-wrap pt-5  md:flex md:flex-wrap  md:justify-between md:pt-5">
+            <div class="lg:home-product-style-lg  md:home-product-style  home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f8.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">short-sleeved summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">62$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f7.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">light cotton shirt </h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">70$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f6.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">linen summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">65$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:w-[10%] lg:m-0 md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f5.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">short-sleeved summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">83$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f4.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">light cotton shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">68$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f3.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">linen summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">61$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f2.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">short-sleeved summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">78$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/f1.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">78$</h4>
+                </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section
+        class=" font-quick w-full h-[30vh] md:h-[40vh] flex flex-col text-cyan-50 justify-center  items-center text-center  bg-[url(./images/banner/b2.jpg)] bg-cover bg-center my-8">
+        <h4 class=" text-[16px] md:text-[21px] py-0 ">Repair Services</h4>
+        <h2 class=" text-3xl md:text-4xl py-2 px-0">Save up to<span class="text-red-400">70% Off</span> on T-Shirts &
+            Accessories
+        </h2>
+        <button
+            class="w-36 h-9 font-none text-black cursor-pointer border-none outline-none transition duration-300 bg-amber-50 hover:bg-emerald-400"
+            onclick="window.location.href='shop.php'">Discover
+            Deals</button>
+    </section>
+    <section class="lg:px-0 px-20 py-10 text-center flex-wrap">
+        <h2 class="font-quick text-5xl font-bold">New Arrivals</h2>
+        <p class="font-poppins text-sm text-gray-600">Summer Collection New Modern Design</p>
+        <div
+            class="lg:justify-center   justify-center flex flex-wrap pt-5  md:flex md:flex-wrap  md:justify-between md:pt-5">
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/n8.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">short-sleeved summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">62$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/n7.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">light cotton shirt </h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">70$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative ">
+                <img class="home-product-img" src="./images/products/n6.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">linen summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">65$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative  ">
+                <img class="home-product-img" src="./images/products/n5.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">short-sleeved summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">83$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative  ">
+                <img class="home-product-img" src="./images/products/n4.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">light cotton shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">68$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative   ">
+                <img class="home-product-img" src="./images/products/n3.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">linen summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">61$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative  ">
+                <img class="home-product-img" src="./images/products/n2.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">short-sleeved summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">78$</h4>
+                </div>
+                </a>
+            </div>
+            <div class="lg:home-product-style-lg md:home-product-style home-product-style-mobile relative  ">
+                <img class="home-product-img" src="./images/products/n1.jpg" alt="">
+                <div class=" text-start px-0 py-2.5 ">
+                    <span class="text-[#606063] text-xs pt-5 font-quick">Zara</span>
+                    <h5 class="pt-2 text-[#1a1a1a] text-sm mb-0.5 -mt-1 font-poppins">summer shirt</h5>
+                    <div class="text-xs -space-x-0.5 -mt-0.5">
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                        <i class="fas fa-star home-product-style-i"></i>
+                    </div>
+                    <h4 class="mt-0">78$</h4>
+                </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="px-20 pt-10 pb-2 text-center   flex justify-between flex-wrap ">
+        <div
+            class="lg:w-[48%]  md:min-w-[580px] md:h-[50vh] min-w-full h-[30vh] font-poppins cursor-pointer flex flex-col banner1 text-black justify-center p-8  items-start    bg-cover bg-center my-5 bg-[url(./images/banner/b17.jpg)]">
+            <h4 class=" text-white text-xl font-light">creazy deals</h4>
+            <h2 class=" text-white text-3xl font-extrabold">buy 1 get 1 free</h2>
+            <span class="text-white text-sm font-normal pb-4">The best classic dress in on sale at Unistyle</span>
+            <button
+               onclick="window.location.href='blog.html'" class="feature-shadow w-34 h-9 font-none text-white cursor-pointer  outline-none transition duration-300 bg-transparent border border-solid border-amber-50 ">Learn
+                more</h4>
+        </div>
+        <div
+            class="lg:w-[48%] md:min-w-[580px] md:h-[50vh] min-w-full h-[30vh] font-poppins cursor-pointer flex flex-col banner2 text-black justify-center p-8  items-start    bg-cover bg-center my-5 bg-[url(./images/banner/b10.jpg)] ">
+            <h4 class=" text-white text-xl font-light">Spring/Summer</h4>
+            <h2 class=" text-white text-3xl font-extrabold">Upcoming seasons</h2>
+            <span class="text-white text-sm font-normal pb-4">The best classic dress in on sale at Unistyle</span>
+            <button
+              onclick="window.location.href='shop.php'"  class="feature-shadow w-34 h-9 font-none text-white cursor-pointer  outline-none transition duration-300 bg-transparent border border-solid border-amber-50 ">Collection
+                </h4>
+        </div>
+    </section>
+    <section class=" md:px-20 px-20  py-0 text-center font-poppins  flex justify-between flex-wrap ">
+        <div
+            class=" w-[28%] md:min-w-[30%] h-[30vh]  flex flex-col banner1 text-black justify-center p-5  items-start   bg-[url(./images/banner/b7.jpg)] bg-[position:top_20%_right_34%] md:bg-center bg-cover  mb-5">
+            <h2 class=" text-white text-2xl font-black">SEASONAL SALE</h2>
+            <h3 class=" text-[#ec544e] font-extrabold text-sm">Winter Collection -50% OFF</h3>
+        </div>
+        <div
+            class="w-[28%] md:min-w-[30%] h-[30vh]  flex flex-col banner1 text-black justify-center p-5  items-start   bg-[url(./images/banner/b4.jpg)] bg-[position:top_5%_right_20%] md:bg-center  mb-5">
+            <h2 class=" text-white text-2xl font-black">NEW FOOTWEAR COLLECTION</h2>
+            <h3 class="text-[#ec544e] font-extrabold text-sm">Spring/Summer 2025</h3>
+        </div>
+        <div
+            class="w-[28%] md:min-w-[30%] h-[30vh] flex flex-col banner1 text-black justify-center p-5  items-start   bg-[url(./images/banner/b18.jpg)] bg-cover bg-[position:top_20%_right_40%] md:bg-center mb-5">
+            <h2 class=" text-white text-2xl font-black">T-SHIRTS</h2>
+            <h3 class="text-[#ec544e] font-extrabold text-sm">New Trendy Prints</h3>
+        </div>
+    </section>
+    <section
+        class=" font-quick  w-full h-[40vh] md:h-[30vh] flex text-cyan-50 justify-between flex-wrap  items-center pl-16 bg-[#041e42] bg-[url(./images/banner/b14.png)] bg-position-[20%]  bg-no-repeat bg-cover  my-8">
+        <div class="">
+            <h4 class=" text-3xl py-2 px-0">Sign Up For Newsletters
+            </h4>
+            <p class=" text-[16px] py-0 text-cyan-600 ">Get E-mail updates about our latest shop and<span
+                    class="text-yellow-400"> special offers.</span> </p>
+        </div>
+        <div class="  pr-10 pb-7 md:pb-0 ">
+            <input type="email" class="text-gray-600  w-full md:w-2xs" placeholder="Your email address">
+            <button
+                class="feature-shadow w-26 mt-1 h-[40.5px]   md:-ml-2.5 md:h-[42px] font-none text-white cursor-pointer bg-[#088178] outline-none transition duration-300  border border-solid border-amber-50">Sign
+                Up</button>
+        </div>
+
+
+    </section>
+    <footer
+        class=" lg:h-[50vh] font-quick flex-col  w-full h-[70vh] px-10 md:px-0 flex text-black    items-center pl-16  my-5">
+        <a class=" lg:pl-13 md:pl-12  w-full font-agbalumo text-3xl text-start text-black  no-underline pb-11"
+            href="home.html">Uni<span class="text-cyan-600">Style</span> </a>
+        <div class="flex w-full justify-between md:justify-around   flex-wrap   items-baseline  ">
+
+            <div class=" ">
+
+                <h4 class=" font-bold mb-8  ">Contact</h4>
+                <p class=""><span class="font-bold">Address: </span>123 Business Street
+                    Suite 100
+                    City, State 12345</p>
+                <p class=""><span class="font-bold">Phone: </span>+1 (555) 123-4567</p>
+                <p class=""><span class="font-bold">Hours: </span>10:00-19:00, Mon-Sat</p>
+                <h4 class="font-bold pt-7">Follow Us</h4>
+                <div class=" text-black space-x-2 mt-4">
+                    <a href="#" class="no-underline text-black hover:text-cyan-600"> <i class="fab fa-twitter "
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="no-underline text-black hover:text-red-600"><i class="fab fa-youtube"
+                            aria-hidden="true"></i></a>
+                    <a href="#" class="no-underline text-black hover:text-blue-500"> <i class="fab fa-facebook-f"
+                            aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="no-underline text-black hover:text-red-700"><i class="fab fa-pinterest-p"
+                            aria-hidden="true"></i></a>
+                    <a href="#" class="no-underline text-black hover:text-pink-600"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+            <div class="">
+                <h4 class="mt-9 font-bold  mb-8">About</h4>
+                <a href="about.html" class="no-underline text-black">
+                    <h4 class="">About Us</h4>
+                </a>
+                <a href="#" class="no-underline text-black">
+                    <h4 class="">Delivery Information</h4>
+                </a>
+                <a href="#" class="no-underline text-black">
+                    <h4 class="">Privacy Policy</h4>
+                </a>
+                <a href="#" class="no-underline text-black">
+                    <h4 class="">Terms & Conditions</h4>
+                </a>
+                <a href="contact.html" class="no-underline text-black">
+                    <h4 class="">Contact Us</h4>
+                </a>
+
+            </div>
+            <div class="">
+                <h4 class="mt-9 font-bold  mb-8">My Account</h4>
+                <a href="cart.php" class="no-underline text-black">
+                    <h4 class="">View Cart</h4>
+                </a>
+                <a href="" class="no-underline text-black">
+                    <h4 class="">Sign In</h4>
+                </a>
+                <a href="" class="no-underline text-black">
+                    <h4 class="">My Wishlist</h4>
+                </a>
+                <a href="" class="no-underline text-black">
+                    <h4 class="">Track My Order</h4>
+                </a>
+                <a href="" class="no-underline text-black">
+                    <h4 class="">Help</h4>
+                </a>
+
+            </div>
+            <div class="">
+                <h4 class="mt-9 font-bold  mb-8">Install App</h4>
+                <p class="">From App Store or Google Play</p>
+                <div class="">
+                    <button
+                        class="  feature-shadow w-34 h-[41.5px] font-none text-white cursor-pointer bg-white outline-none transition duration-300  border border-solid border-cyan-600"><img
+                            src="" alt="" class=""><img class="text-7xl"
+                            src="./images/logos/Google_Play_2022_logo.svg.png" alt=""></button>
+                    <button
+                        class="feature-shadow w-34 h-[41.5px] font-none text-white cursor-pointer bg-white outline-none transition duration-300  border border-solid border-cyan-600"><img
+                            src="" alt="" class=""><img src="./images/logos/available-on-the-app-store.svg"
+                            alt=""></button>
+                </div>
+                <p class="">Secured Payment Gateways</p>
+                <div class="h-30 w-54"><img class="text-6xl" src="./images/logos/paymetns2.png" alt="" class="">
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="">
+            <p class="mb-">© 2025 UniStyle. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
