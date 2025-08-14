@@ -48,7 +48,7 @@ if (!empty($wishlist)) {
         </div>
         <ul class=" hidden md:flex space-x-14 font-poppins text-red-700 list-none pr-10">
             <li class=""><a href="home.html" aria-current="page"
-                    class=" aria-[current=page]:text-cyan-600 aria-[current=page]:border-b-solid aria-[current=page]:border-b-2 aria-[current=page]:pb-[6px] aria-[current=page]:border-b-cyan-600    hover:border-b-cyan-600 no-underline text-black hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]   duration-100">Home</a>
+                    class="     hover:border-b-cyan-600 no-underline text-black hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]   duration-100">Home</a>
             </li>
             <li class="  "><a href="shop.php" aria-current="page"
                     class=" hover:border-b-cyan-600 no-underline text-black hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100">Shop</a>
@@ -63,7 +63,7 @@ if (!empty($wishlist)) {
                     class=" hover:border-b-cyan-600 text-black no-underline hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100">Contact</a>
             </li>
             <li class=""><a href="wishlist.php" aria-current="page"
-                    class="text-black hover:border-b-cyan-600 hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100"><i
+                    class="aria-[current=page]:text-cyan-600 aria-[current=page]:border-b-solid aria-[current=page]:border-b-2 aria-[current=page]:pb-[6px] aria-[current=page]:border-b-cyan-600 text-black hover:border-b-cyan-600 hover:text-cyan-600 hover:border-b-solid hover:border-b-2 hover:pb-[6px]  duration-100"><i
                         class="fa fa-heart" aria-hidden="true"></i>
 
                 </a></li>
@@ -252,5 +252,6 @@ if (!empty($wishlist)) {
     </script>
     <script src="script.js"></script>
 </body>
+
 
 </html>
